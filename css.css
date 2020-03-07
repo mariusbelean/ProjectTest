@@ -1,3 +1,149 @@
-#unu{
-    color: #C8FE2E;
-}
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background-color: whitesmoke;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  #menu {
+    transition: margin-left .5s;
+    padding: 7px;
+  }
+
+  #header {
+    padding: 60px;
+    text-align: end;
+    color: white;
+    font-size: 30px;
+    background-image: url("img/header.jpg");
+    background-position: 50% 40%;
+  }
+
+  #about_header {
+    padding: 60px;
+    text-align: end;
+    color: rgb(63, 57, 39);
+    font-size: 30px;
+    background-image: url("img/about.jpg");
+    background-position: 180% 80%;
+  }
+
+  #about_svg{
+    float: right;
+  }
+
+  #circle {
+      position: absolute;
+      top: 400px;
+      left: 1000px;
+  }
+
+  #products_header {
+    padding: 60px;
+    text-align: end;
+    color: rgb(63, 57, 39);
+    font-size: 30px;
+    background-image: url("img/products.png");
+    background-position: 80% 80%;
+  }
+
+  .produse_table {
+    cursor: pointer;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .produse_table td, .produse_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .produse_table td:hover {background-color: #ddd;}
+  
+  .produse_table th {
+    cursor: default;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(209, 189, 76);
+    color: white;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(216, 199, 50);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ac9f29;
+  }
+
+  .container {
+    border-radius: 5px;
+    width: 300px;
+    float:left; 
+  }
+
+  #contact {
+      margin-left: 400px;
+  }
+
+  .mapouter{
+      position: absolute;
+      left: 1000px;
+      top: 360px;
+  }
