@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css.css">
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    </head>
+    <title>Contact</title>
+    <div id = "menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; Meniu</span>
+    </div>
+    <div id= "header">
+        <h1>Contact</h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href="index.html">Acasa</a>
+        <a href="about.html">Despre noi</a>
+        <a href="products.html">Produse</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <div id="main">
+        <div class="container">
+            <form action="/action_page.php">
+              <label for="fname">Prenume</label>
+              <input type="text" id="fname" name="firstname" placeholder="Prenumele dvs.." style="height:20px">
+          
+              <label for="lname">Nume</label>
+              <input type="text" id="lname" name="lastname" placeholder="Numele dvs.." style="height:20px">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Adresa email.." style="height:20px">
+          
+              <label for="country">Tara</label>
+              <select id="country" name="country">
+                <option value="australia">Romania</option>
+                <option value="canada">Germania</option>
+                <option value="usa">Franta</option>
+                <option value="usa">Italia</option>
+              </select>
+              
+                <input type="radio" id="fizica" name="tip" value="fizica">
+                    <label for="fizica">Persoana fizica</label><br>
+                <input type="radio" id="juridica" name="tip" value="juridica">
+                    <label for="juridica">Persoana juridica</label><br><br>
+              <label for="subject">Mesaj</label>
+              <textarea id="subject" name="subject" placeholder="..." style="height:60px"></textarea>
+          
+              <input type="submit" value="Trimite">
+            </form>
+          </div>
+          <div id = "contact">
+            <h4>MOTOR OIL SRL</h4>
+            <h5>Cod Unic de Înregistrare : 32749235<br>
+            Nr. Înmatriculare: J26/115/1998</h5>
+            Strada Pandurilor, nr. 125,<br>
+            RO-540082, Targu Mureș, Romania<br><br>
+            Tel: +40 744 434 788<br><br>
+            contact@motoroil.ro
+            <br><br><br>
+            <svg height="80" width="300">
+                <g fill="none" stroke="black">
+                  <path stroke-width="4" d="M1 20 l215 0" />
+                  <path stroke-width="6" d="M1 40 l215 0" />
+                  <path stroke-width="12" d="M1 60 l215 0" />
+                </g>
+              </svg>
+          </div>
+          <div class="mapouter">
+              <div class="gmap_canvas">
+                  <iframe width="404" height="335" id="gmap_canvas" src="https://maps.google.com/maps?q=Pandurilor%20125&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+            </div><style>.gmap_canvas {overflow:hidden;background:none!important;height:335px;width:404px;}</style>
+        </div>
+      </div>
+      
+</html>
